@@ -18,5 +18,6 @@ When(/^I sort the events by "([^\"]*)"$/, async function (sortCriteria) {
 
 Then(/^the events are displayed in "([^\"]*)" order$/, async function (sortOrder) {
   
+  // To do: Add actual checks for CaaS cards
   await this.page.native.waitForTimeout(5000);
 });

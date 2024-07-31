@@ -8,6 +8,9 @@ export class EventDetails extends classes(EventsGnavPage) {
       arguments: [contentPath],
     });
 
-    this.buildProps({ rsvpButton1: 'href="#rsvp-form-1"' });
+    this.buildProps({ 
+      rsvpButton1: '[href="#rsvp-form-1"]',
+      rsvpFormModal: '.dialog-modal#rsvp-form-1 .fragment',
+     });
   }
 }
